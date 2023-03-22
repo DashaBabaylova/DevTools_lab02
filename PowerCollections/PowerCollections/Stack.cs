@@ -40,7 +40,7 @@ namespace PowerCollections
         }
 
         public T Pop()
-        
+        {
             if (count == 0)
             {
                 throw new InvalidOperationException("Stack empty");
