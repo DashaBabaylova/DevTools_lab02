@@ -1,0 +1,24 @@
+name: build and test
+
+on: push
+
+jobs:
+
+  build_and_test:
+
+    runs-on: windows-latest 
+
+    steps:
+
+    - name: checkout
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+      
+    - name: build project
+      run: dotnet build
+      working-directory: PowerCollections
+      
+    - name: test project
+      run: dotnet test --no-build
+      working-directory: PowerCollections
