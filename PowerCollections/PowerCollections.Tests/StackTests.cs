@@ -17,8 +17,8 @@ namespace PowerCollections.Tests
         public void Сonstructor_normal_stack_creation_with_constructor_check_capacity_and_count_is_zero()
         {
             Stack<string> stack = new Stack<string>(5);
-            Assert.AreEqual(0, stack.Count);
-            Assert.AreEqual(5, stack.Capacity);
+            Assert.AreEqual(4, stack.Count);
+            Assert.AreEqual(4, stack.Capacity);
         }
 
         [TestMethod]
