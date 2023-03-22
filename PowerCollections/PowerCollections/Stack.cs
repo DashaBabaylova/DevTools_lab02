@@ -16,7 +16,7 @@ namespace PowerCollections
 
         public int Count { get { return count; } }
 
-        public Stack(int stack_capacity)
+        public Stack(int stack_capacity = 100)
         {
             if (stack_capacity > 0)
             {
